@@ -19,6 +19,7 @@ export default function App() {
   const [input, setInput] = useState("");
   const [roomNum, setRoomNum] = useState(1);
   const [editMode, setEditMode] = useState(0);
+  const [user , setUser] = useState("")
 
   const [messages, setMessages] = useState<Message[]>([]);
   const [channels, setChannels] = useState<{ id: number; name: string }[]>([]);
@@ -29,6 +30,22 @@ export default function App() {
     if (!connection) {
       return;
     }
+       const handleUser = () => {
+      const name = window.prompt("Please enter your name:");
+      if (name) {
+        sessionStorage.setItem('username', name); // Store user name in session
+        //console .log the sessionvalue to see if it works
+        console.log(sessionStorage.getItem('username'));
+       
+      } else {
+        handleUser();
+      }
+    };
+
+    //if the session is empty ask for the username
+    sessionStorage.getItem('username') === null && handleUser()
+
+  
 
     //only listen to the messages coming from certain chat room
     connection.invoke("AddToGroup", roomNum.toString());
@@ -43,7 +60,9 @@ export default function App() {
     });
 
 
-    
+    connection.on("MessageDeleted", (messageId: number) => {
+      setMessages(messages.filter((message) => message.id !== messageId));
+    });
    
 
     fetch("/api/channels", { method: "GET" })
@@ -70,14 +89,8 @@ export default function App() {
     };
   }, [connection, roomNum]);
 
-  // useEffect(() => {
-  //   // scroll to the bottom of the message list when messages are added
-  //   if (messageListRef.current) {
-  //     messageListRef.current.scrollTo(0, messageListRef.current.scrollHeight);
-  //   }
-  // }, [messages]);
 
-
+//handle submit
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(roomNum);
@@ -88,19 +101,28 @@ export default function App() {
       },
       body: JSON.stringify({
         text: input,
-        userName: "saM",
+        //give me the code to set the use name equals to  session  usernamw 
+        // username: sessionStorage.getItem('username'),
+      
+        // userName: user,
+        username: "j",
+
       }),
     });
 
     setInput("");
   };
 
+
+//delete message
   const handleDelete = async (id: number) => {
     await fetch(`/api/messages/${id}`, {
       method: "DELETE",
     });
     setMessages(messages.filter((message) => message.id !== id));
   };
+
+
 
   return (
     <div className="App">
@@ -109,7 +131,9 @@ export default function App() {
       <div className="sectionLeft">
         <div className="header">
           <h3>SignalR Chat</h3>
-          <p>{connection ? "connected" : "Not Connected"}</p>
+          {/* write me the coe ethat say hi and the nem in session usernae */}
+          <h4>Hi {sessionStorage.getItem('username')}</h4>
+          <p>You are {connection ? "connected" : "Not Connected"}</p>
         </div>
         <h4>Channels</h4>
         <ul className="channelList">
@@ -124,6 +148,13 @@ export default function App() {
             </li>
           ))}
         </ul>
+        <button onClick={() => {
+  sessionStorage.removeItem('username');
+  window.location.reload();
+}}>Logout</button>
+
+
+
       </div>
 
       {/* SECTION RIGHT */}
@@ -162,6 +193,3 @@ export default function App() {
   );
 }
 
-//editMessage text hast get empty every time we click on new edit
-//when clicking again on edit it has to clode the editMode - setEditMode(0)
-//check if the inout is full befor eediting

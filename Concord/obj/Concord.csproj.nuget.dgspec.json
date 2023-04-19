@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sepeh\\OneDrive\\Desktop\\SeaShark\\week6\\Concord\\Concord.csproj": {}
+    "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\Concord.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sepeh\\OneDrive\\Desktop\\SeaShark\\week6\\Concord\\Concord.csproj": {
+    "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\Concord.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sepeh\\OneDrive\\Desktop\\SeaShark\\week6\\Concord\\Concord.csproj",
+        "projectUniqueName": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\Concord.csproj",
         "projectName": "Concord",
-        "projectPath": "C:\\Users\\Sepeh\\OneDrive\\Desktop\\SeaShark\\week6\\Concord\\Concord.csproj",
+        "projectPath": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\Concord.csproj",
         "packagesPath": "C:\\Users\\Sepeh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sepeh\\OneDrive\\Desktop\\SeaShark\\week6\\Concord\\obj\\",
+        "outputPath": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sepeh\\AppData\\Roaming\\NuGet\\NuGet.Config",
