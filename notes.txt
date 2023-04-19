@@ -1,0 +1,21 @@
+GET /channels?limit=10&offset=0&order=desc
+GET /channels/:id
+
+POST /messages/:id
+
+POST /messages?channelId=1
+POST /channels/1/messages
+
+/collection/:if/subcollection
+
+
+put vs patch 
+put completely update the old file and dispose(?) the old version but path as name suggest is partial.
+
+
+
+
+-----
+
+The Cycle
+Frontend -> backend Controllers ->  hub -> Frontend
