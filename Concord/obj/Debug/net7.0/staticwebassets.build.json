@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "uAkJUilkfuPTH2OKj7p6IEB9h2PL6mCWNMiyimPDIYI=",
+  "Hash": "PtbNED/Jci2qkmCDl5rnDQJG0wrgj3QHZB/7w4g4AUc=",
   "Source": "Concord",
   "BasePath": "_content/Concord",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Concord\\wwwroot",
+      "Source": "Concord",
+      "ContentRoot": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\wwwroot\\",
+      "BasePath": "_content/Concord",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\wwwroot\\assets\\index-beb53f87.css",
+      "SourceId": "Concord",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\wwwroot\\",
+      "BasePath": "_content/Concord",
+      "RelativePath": "assets/index-beb53f87.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-beb53f87.css"
+    },
+    {
+      "Identity": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\wwwroot\\assets\\index-e9e2a7b0.js",
+      "SourceId": "Concord",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\wwwroot\\",
+      "BasePath": "_content/Concord",
+      "RelativePath": "assets/index-e9e2a7b0.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-e9e2a7b0.js"
+    },
+    {
+      "Identity": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\wwwroot\\index.html",
+      "SourceId": "Concord",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\wwwroot\\",
+      "BasePath": "_content/Concord",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\wwwroot\\vite.svg",
+      "SourceId": "Concord",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sepeh\\OneDrive\\Documents\\GitHub\\SignalR-chat\\Concord\\wwwroot\\",
+      "BasePath": "_content/Concord",
+      "RelativePath": "vite.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\vite.svg"
+    }
+  ]
 }

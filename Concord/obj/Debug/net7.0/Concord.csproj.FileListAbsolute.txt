@@ -767,3 +767,4 @@ C:\Users\Sepeh\OneDrive\Documents\GitHub\SignalR-chat\Concord\obj\Debug\net7.0\r
 C:\Users\Sepeh\OneDrive\Documents\GitHub\SignalR-chat\Concord\obj\Debug\net7.0\Concord.pdb
 C:\Users\Sepeh\OneDrive\Documents\GitHub\SignalR-chat\Concord\obj\Debug\net7.0\Concord.genruntimeconfig.cache
 C:\Users\Sepeh\OneDrive\Documents\GitHub\SignalR-chat\Concord\obj\Debug\net7.0\ref\Concord.dll
+C:\Users\Sepeh\OneDrive\Documents\GitHub\SignalR-chat\Concord\bin\Debug\net7.0\Concord.staticwebassets.runtime.json
